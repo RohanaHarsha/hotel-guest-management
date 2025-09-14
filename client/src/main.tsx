@@ -3,8 +3,8 @@ import { createRoot } from 'react-dom/client';
 import { RouterProvider, createBrowserRouter, createRoutesFromElements, Route } from 'react-router-dom';
 import App from './App.tsx';
 import GuestList from './pages/GuestList.tsx';
+import GuestRegistration from "./pages/GuestRegistration"
 import {Home} from './pages/Home.tsx';
-import {GuestRegistration} from './pages/GuestRegistration.tsx';
 
 const router = createBrowserRouter(
   createRoutesFromElements(

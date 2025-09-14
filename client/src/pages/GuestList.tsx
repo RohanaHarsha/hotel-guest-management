@@ -47,7 +47,10 @@ export default function GuestList() {
         <table className="w-full bg-white shadow rounded overflow-hidden">
           <thead className="bg-gray-100 text-left">
             <tr>
-              <th className="p-2">Name</th>
+              <th className="p-2">First Name</th>
+              <th className="p-2">Last Name</th>
+              <th className="p-2">Address</th>
+              <th className="p-2">Date of Birth</th>
               <th className="p-2">Email</th>
               <th className="p-2">Phone</th>
               <th className="p-2">Actions</th>
@@ -56,7 +59,10 @@ export default function GuestList() {
           <tbody>
             {guests.map(g => (
               <tr key={g.id} className="border-t">
-                <td className="p-2">{g.name}</td>
+                <td className="p-2">{g.first_name}</td>
+                <td className="p-2">{g.last_name}</td>
+                <td className="p-2">{g.address}</td>
+                <td className="p-2">{g.date_of_birth}</td>
                 <td className="p-2">{g.email}</td>
                 <td className="p-2">{g.phone}</td>
                 <td className="p-2 space-x-2">
@@ -67,7 +73,7 @@ export default function GuestList() {
                     View / Edit
                   </button>
                   <button
-                    // onClick={() => handleDelete(g.id)}
+                    onClick={() => handleDelete(g.id)}
                     className="px-2 py-1 border rounded text-sm text-red-600"
                   >
                     Delete

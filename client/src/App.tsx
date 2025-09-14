@@ -16,7 +16,6 @@ const App = () => (
         </li>
       </ul>
     </nav>
-    <h1>App Component Loaded</h1>
     <Outlet />
   </>
 );
