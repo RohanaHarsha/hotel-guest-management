@@ -55,10 +55,13 @@ This app provides a streamlined interface to manage hotel guests, including regi
     │   ├─ src/
     │   │   ├─ components/
     │   │   ├─ pages/
-    │   │   │ 
     │   │   │ ├─ GuestList.tsx
     │   │   │ ├─ GuestEdit.tsx 
     │   │   │ └─ GuestRegistration.tsx 
+    |   |   ├─ server/
+    │   │   │ ├─ Guest.ts
+    │   │   │ ├─ pocketbase.ts 
+    │   │   │ 
     │   │   ├─ styles/ # CSS / Tailwind overrides
     │   │   ├─ app.tsx 
     │   │   └─ main.tsx # App entry point
@@ -75,7 +78,7 @@ This app provides a streamlined interface to manage hotel guests, including regi
 
 ### 1st Terminal (Frontend - React + Vite)
 
-*Current directory: `client`*
+*Current directory: `hotel-guet-management`*
 
 ```bash
 # go to client folder
@@ -95,3 +98,21 @@ npm install pocketbase
 
 # install tailwindcss + vite plugin
 npm install tailwindcss @tailwindcss/vite
+
+#run npm run dev
+```
+### 2nd Terminal (pocketbase)
+
+*Current directory: `hotel-guet-management`*
+```bash
+#note
+#you can change the pocketbase credentials in pocketbase.ts in server folder inside of the client
+
+# go to server folder
+cd server
+
+#go to pocketbase_folder
+cd pocketbase_setup
+
+#run(where the pocketbase exe exist)
+./pocketbase serve
