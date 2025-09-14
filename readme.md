@@ -51,19 +51,20 @@ This app provides a streamlined interface to manage hotel guests, including regi
 ## Project Structure
 ├─ hotel-guest-management
     ├─ client/
-    │ ├─ src/
-    │ │ ├─ components/
-    │ │ ├─ pages/
-    │ │ │ 
-    │ │ │ ├─ GuestList.tsx
-    │ │ │ ├─ GuestEdit.tsx 
-    │ │ │ └─ GuestRegistration.tsx 
-    │ │ ├─ styles/ # CSS / Tailwind overrides
-    | | ├─ app.tsx 
-    │ │ └─ main.tsx # App entry point
-    │ └─ package.json
+    │   ├─ src/
+    │   │   ├─ components/
+    │   │   ├─ pages/
+    │   │   │ 
+    │   │   │ ├─ GuestList.tsx
+    │   │   │ ├─ GuestEdit.tsx 
+    │   │   │ └─ GuestRegistration.tsx 
+    │   │   ├─ styles/ # CSS / Tailwind overrides
+    │   │   ├─ app.tsx 
+    │   │   └─ main.tsx # App entry point
+    │   └─ package.json
     ├─ pocketbase/ # PocketBase server & collections
     └─ README.md
+
 
 ## installation
 
