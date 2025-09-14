@@ -67,35 +67,31 @@ This app provides a streamlined interface to manage hotel guests, including regi
     └─ README.md
 ```
 
+## Installation
 
-## installation
+**Split the terminal to run PocketBase as well**
 
+---
 
-**Split the terminal to run procketbase as well**
+### 1st Terminal (Frontend - React + Vite)
 
-**1st terminal**
+*Current directory: `client`*
 
-*current directory*
+```bash
+# go to client folder
+cd client
 
-- cd client
+# install dependencies
+npm install
 
- -npm install
- -create vite@latest choose react and typescript
- -react-router-dom
- -npm install pocketbase
- -npm install npm install tailwindcss @tailwindcss/vite then copy the plugin  tailwindcss() to the vite.configuration.ts and 
- -import import tailwindcss from '@tailwindcss/vite' to the file
+# create a new Vite app (choose React + TypeScript)
+npm create vite@latest
 
+# install react-router
+npm install react-router-dom
 
- *after installing dependancies run*
+# install pocketbase client
+npm install pocketbase
 
- -npm run dev
-
- *2nd terminal*
-
--cd server/pocketbase_setup
-- ./pocketbase serve
-
-
-
-
+# install tailwindcss + vite plugin
+npm install tailwindcss @tailwindcss/vite
