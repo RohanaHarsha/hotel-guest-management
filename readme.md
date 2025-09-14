@@ -87,9 +87,6 @@ cd client
 # install dependencies
 npm install
 
-# create a new Vite app (choose React + TypeScript)
-npm create vite@latest
-
 # install react-router
 npm install react-router-dom
 
@@ -98,6 +95,8 @@ npm install pocketbase
 
 # install tailwindcss + vite plugin
 npm install tailwindcss @tailwindcss/vite
+
+# add tailwindcss() to the array of the jason-lock.js dependancy file 
 
 #run npm run dev
 ```
