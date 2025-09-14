@@ -49,6 +49,7 @@ This app provides a streamlined interface to manage hotel guests, including regi
 
 
 ## Project Structure
+```
 ├─ hotel-guest-management
     ├─ client/
     │   ├─ src/
@@ -64,6 +65,7 @@ This app provides a streamlined interface to manage hotel guests, including regi
     │   └─ package.json
     ├─ pocketbase/ # PocketBase server & collections
     └─ README.md
+```
 
 
 ## installation
