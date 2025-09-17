@@ -6,7 +6,7 @@ export const pb = new PocketBase(PB_URL);
 
 export const initAuth = async () => {
   try {
-    await pb.admins.authWithPassword("tes@gmail.com", "12345678");
+    await pb.admins.authWithPassword("test@gmail.com", "12345678");
   } catch (error) {
     console.error("Authentication failed:", error);
     throw error;
